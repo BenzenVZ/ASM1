@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #a2befc, #3e506a);
+    min-height:100vh;
+}
+
+.flex-fill {
+    flex:1 1 auto;
+}
+
+header {
+    padding: 0px 40px;
+   background: linear-gradient(to right, #0e54ea, #46f048);
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(to right, #0e54ea, #46f048);
+    bottom : 0;
+    margin-top: auto;
+}
+
+.nav-header {
+    background: linear-gradient(to right, #0e54ea, #46f048);
+}
+
+main{
+    flex:1
+
+}
+
+.nav-footer {
+    background: linear-gradient(to right, #0e54ea, #46f048);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: auto;
+}
+
+/*.nav-footer {*/
+/*    position: fixed;*/
+/*    bottom: 0;*/
+/*    width:100%;*/
+/*    height: 40px;*/
+/*    background-color: blue;*/
+/*}*/

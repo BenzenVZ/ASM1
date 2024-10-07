@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Certificate Classification</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center my-4">Certificate Classification</h1>
+
+    <table class="table table-bordered">
+        <thead class="thead-light">
+        <tr>
+            <th>#</th>
+            <th>Category</th>
+            <th>Total Certificates</th>
+        </tr>
+        </thead>
+        <tbody>
+<!--        Biến stat được sử dụng để theo dõi chỉ số của vòng lặp.-->
+        <tr th:each="category, stat : ${classifications}">
+            <td th:text="${stat.index + 1}"></td> <!-- Hiển thị số thứ tự cho mỗi hàng -->
+            <td th:text="${category[0]}"></td> <!-- Tên category -->
+            <td th:text="${category[1]}"></td> <!-- Tổng số chứng chỉ trong category -->
+        </tr>
+        </tbody>
+    </table>
+
+    <a href="/certs" class="btn btn-primary">Back to List</a>
+</div>
+</body>
+</html>
